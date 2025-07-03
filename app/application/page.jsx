@@ -22,7 +22,7 @@ export default function ApplicationPage() {
     formData.append("idFile", selectedFile); // ملف PDF
 
     try {
-      const res = await fetch("wpsite.ctrla-code.com/wp-json/mj-award/v1/submit", {
+      const res = await fetch("https://wpsite.ctrla-code.com/wp-json/mj-award/v1/submit", {
         method: "POST",
         body: formData,
       });
